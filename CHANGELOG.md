@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.1 — 2026-11-14
+
+### Alterado
+
+- **Revisor independente em Opus.** O agente `ai-driven-sdlc:reviewer` passa de `model: inherit` para `model: opus`. Com `inherit` ele rodava no modelo da sessão, inclusive no Fable, o dobro do preço do Opus por token; o roteamento do próprio framework (`config/routing.json`) já pede revisão no tier `strong` (Opus) e, em L3, no `frontier` (Opus com esforço `xhigh`). O `engineer` e o `initiative-reviewer` seguem com `inherit`.
+
 ## 2.2.0 — 2026-10-18
 
 Handoff como livro de registros e trabalho organizado em épico, story e tarefa.
