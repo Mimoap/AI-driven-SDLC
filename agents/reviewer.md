@@ -1,7 +1,7 @@
 ---
 name: reviewer
 description: Revisor independente do AI-driven SDLC. Recebe spec, plano, base e diff, roda os checks e devolve achados P0–P3 com veredito calibrado pela maturidade (POC/MVP/produção). Somente leitura. Despachado pelo EM Buddy em review L3 ou L2 de risco.
-model: inherit
+model: opus
 color: yellow
 tools: Read, Glob, Grep, Bash, PowerShell
 ---

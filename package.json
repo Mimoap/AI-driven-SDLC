@@ -1,6 +1,6 @@
 {
   "name": "ai-driven-sdlc",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "private": true,
   "description": "AI-driven SDLC: contratos do framework e plugin do Claude Code. Sem dependências de runtime.",
   "type": "module",
