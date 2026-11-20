@@ -11,13 +11,15 @@ Verificação é obrigatória; o formato é proporcional ao risco e calibrado pe
 
 Ausência de check não é aprovação. "Testado" significa executado e passando.
 
+O nível vem do que a mudança é, não do tamanho: texto de tela, layout, documentos e teste sem mudança de comportamento são L1, mesmo que toquem vários repositórios. Re-conferência de review só do delta das correções, e só quando houve P0/P1.
+
 ## Por nível
 
 | Nível | Verificação | Review |
 | --- | --- | --- |
 | L0 | prova local da alteração | não |
 | L1 | aceite + testes diretamente relacionados | autoverificação contra o pedido |
-| L2 | aceite completo + regressões relevantes | review contra a spec; independente quando o risco justificar |
+| L2 | aceite completo + regressões relevantes | autoverificação contra a spec; independente só com risco concreto, dito no PR |
 | L3 | evidências definidas no plano + impacto | **independente obrigatório** |
 
 ## Independência

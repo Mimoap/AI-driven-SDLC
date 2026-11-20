@@ -2,9 +2,13 @@
 
 Vale para todos os papéis e runtimes. O objetivo é que o humano entenda o estado sem ler código e reconheça a severidade antes do detalhe.
 
+## Tamanho padrão
+
+Resposta comum: **3 a 5 linhas**, com a evidência que importa. O formato completo (tag e três camadas) é para relatório de gate (spec pronta, pacote de merge, entrega concluída) e escalada. Sem relatório depois de cada operação.
+
 ## Tags de estado
 
-Todo relatório final e toda escalada começam com uma tag:
+Todo relatório de gate e toda escalada começam com uma tag:
 
 - `[OK]` — concluído e verificado dentro do escopo;
 - `[ATENÇÃO]` — resultado entregue, com ressalva importante que o humano deve conhecer;
