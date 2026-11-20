@@ -36,6 +36,7 @@ A SPEC define **o comportamento, o escopo e os critérios de aceite**; o Design 
 - Cada story é uma fatia vertical: entrega comportamento verificável de ponta a ponta, não uma camada isolada. A que valida a hipótese mais arriscada vem cedo.
 - Preencha o [template de story](../../templates/story.md): TL;DR e valor, contexto de negócio e técnico, escopo, interfaces afetadas, aceite em Given/When/Then ligado aos ACs da spec, **tarefas**, testes e regressões, estimativa (S/M/L, risco, incerteza), roteamento ([routing](../policies/routing.md)) e limite observável ([budgets](../policies/budgets.md)). A story precisa ser executável por quem não leu a conversa.
 - Persista sem duplicar: modo GitHub, a Issue da story é o corpo do template; sem GitHub, `stories/<story>.md` (épico) ou uma seção do `plan.md` (feature isolada). O plano guarda só título e link ([github](../integrations/github.md)).
+- **Uma página no máximo.** Alternativas em uma linha cada, com a recomendação; estudo, medição ou protótipo só quando o humano pedir ou quando a decisão depender dele. L0/L1 não tem story: o PR basta.
 - Marque a story como `refinada` na tabela da spec.
 
 ## 3. Seguir para o build

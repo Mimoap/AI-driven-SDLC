@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.3.0 — 2026-11-20
+
+Modo enxuto: o processo do tamanho da mudança. Origem: num projeto real (Mimo), a troca de três rótulos de tela gerou spec com estudo de medição, review independente e re-conferência, 4 PRs mais 1 de fechamento e 3 registros de handoff; metade dos commits de uma semana era só documentação e registro.
+
+### Alterado
+
+- **Risco pelo que a mudança é** (EM Buddy, verificação): texto de tela, layout, documentos e teste sem mudança de comportamento são L1, mesmo em vários repositórios; L0/L1 sem spec, sem review independente e sem pasta de evidências.
+- **Review independente obrigatório só em L3.** Em L2, só com risco concreto, dito no PR. Re-conferência só do delta e só quando houve P0/P1.
+- **Merge por pacote** (autonomia): uma decisão humana por story cobre a sequência de PRs, executada com conferências antes e depois de cada merge e parada na primeira que falhar. Continua valendo que merge nunca é deploy.
+- **Desvios da spec em dois grupos** (autonomia, modelo de PR): o reversível e interno à story segue e é listado no PR, com veto no merge; teste que muda de expectativa, comportamento visível, contrato, outro repositório, migração e dependência param antes.
+- **Um PR por repositório por story, com os documentos dentro**; sem PR de fechamento. Spec e story de uma página.
+- **Handoff por gate** (spec pronta, pacote de merge), fim de story e pausa; não por tarefa.
+- **Resposta padrão de 3 a 5 linhas** (comunicação); tag e três camadas só em relatório de gate e escalada.
+- O hook de sessão mostra a versão lida do `plugin.json` (antes, fixa em "v2.1").
+
+### Migração
+
+Projetos que já tinham regra própria equivalente (três gates, merge consolidado) podem apontar para o plugin e manter só o que é específico deles. Depois de atualizar, rode `/plugin` para recarregar a versão 2.3.0 do marketplace local.
+
 ## 2.2.1 — 2026-11-14
 
 ### Alterado

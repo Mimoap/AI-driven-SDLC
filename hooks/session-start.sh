@@ -28,7 +28,8 @@ EOF
   return 0
 }
 
-printf '# AI-driven SDLC v2.1 — plugin ai-driven-sdlc ativo\n'
+version="$(sed -n 's/.*"version": *"\([^"]*\)".*/\1/p' "$root/.claude-plugin/plugin.json" 2>/dev/null | head -n 1)"
+printf '# AI-driven SDLC v%s — plugin ai-driven-sdlc ativo\n' "${version:-?}"
 printf 'Raiz do framework: %s\n\n' "$root"
 
 if [ -f "$root/harness/roles/em-buddy.md" ]; then
